@@ -1,10 +1,7 @@
 
 zoy-springcloud-learning.zip
-ch1-1/.idea
-ch1-1/zoy-springcloud-learning-client/mvnw*
-ch1-1/zoy-springcloud-learning-client/.mvn
-ch1-1/zoy-springcloud-learning-server/mvnw*
-ch1-1/zoy-springcloud-learning-server/.mvn/wrapper/maven-wrapper.jar
-ch1-1/zoy-springcloud-learning-server/.mvn/wrapper/maven-wrapper.properties
-ch1-1/zoy-springcloud-learning.iml
-ch1-1/zoy-springcloud-learning-server/.mvn/wrapper/maven-wrapper.jar
+*/.idea
+*/*/mvnw*
+*/.mvn
+*.iml
+*/*/.mvn/*
