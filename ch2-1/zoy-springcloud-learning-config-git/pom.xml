@@ -3,25 +3,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.4.RELEASE</version>
+		<groupId>com.zoy.springcloud</groupId>
+		<artifactId>zoy-springcloud-learning</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zoy.springcloud</groupId>
-	<artifactId>zoy-springcloud-learning</artifactId>
+	<artifactId>zoy-springcloud-learning-config-git</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>zoy-springcloud-learning</name>
+	<name>zoy-springcloud-learning-config-git</name>
 	<description>Demo project for Spring Boot</description>
-
-	<modules>
-		<module>zoy-springcloud-learning-client</module>
-		<module>zoy-springcloud-learning-server</module>
-		<module>zoy-springcloud-learning-consumer</module>
-		<module>zoy-springcloud-learning-config-git</module>
-		<module>zoy-springcloud-learning-config-client</module>
-	</modules>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -38,7 +29,25 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--·config server，配置中心-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Dalston.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
