@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://127.0.0.1:6006/
+      profile: dev
+      label: master
+server:
+  port: 5005
+
+management:
+  security:
+    enabled: false
